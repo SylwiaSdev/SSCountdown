@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Countdown timer</title>
+	
+	<meta name="description" content="Countdown timer" />
+	<meta name="keywords" content="countdown, timer" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan:300,400&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="header">
+            <a href="/">
+                <div id="logo"></div>
+                <div id="webName">Countdown timer</div>
+            </a>
+            <div id="headerIcons">
+                <div class="iconBorder">
+                    <a  href="https://github.com/SylwiaSdev" target="_blank">
+                        <div id="iconGitHub"></div>
+                    </a>
+                </div>
+                <div class="iconBorder">
+                    <a href="mailto:sylwiasuligowska@gmail.com">
+                        <div id="iconMail"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-info">The link has been copied to the clipboard</div>
+        
+        <div class="mainContent">
+            <div class="descriptionContent">
+                <div id="headerName">Countdown to the event</div>
+                <div id="headerDescription">Enter the name of the event, date and time then click the button to start the countdown</div>
+            </div>
+            <input id="nameEventInput" type="text" placeholder="Name of the event">
+            <div>
+                <input id="dateInput" type="date">
+                <input id="timeInput" type="time">
+            </div>
+            <div class="buttonCounting">Start the countdown</div>
+        </div>
+        
+        <div id="mainCountingContent">
+            <div id="nameOfEvent"></div>
+            <div id="timeCountdown">
+                
+                <div id="yearCountdownPlace" class="timeCountdownPlace">
+                    <div id="years" class="numberOfTime"></div>
+                    <div class="nameOfTime">Years</div>
+                </div>
+                
+                <div id="yearClone" class="colon">:</div>
+                
+                <div id="monthCountdownPlace" class="timeCountdownPlace">
+                    <div id="months" class="numberOfTime"></div>
+                    <div class="nameOfTime">Months</div>
+                </div>
+                
+                <div id="monthClone" class="colon">:</div>
+                
+                <div id="dayCountdownPlace" class="timeCountdownPlace">
+                    <div id="days" class="numberOfTime"></div>
+                    <div class="nameOfTime">Days</div>
+                </div>
+                
+                <div id="dayClone" class="colon">:</div>
+                
+                <div class="timeCountdownPlace">
+                    <div id="hours" class="numberOfTime"></div>
+                    <div class="nameOfTime">Hours</div>
+                </div>
+                
+                <div id="hourClone" class="colon">:</div>
+                
+                <div class="timeCountdownPlace">
+                    <div id="minutes" class="numberOfTime"></div>
+                    <div class="nameOfTime">Minutes</div>
+                </div>
+                
+                <div class="colon">:</div>
+                
+                <div class="timeCountdownPlace">  
+                    <div id="seconds" class="numberOfTime"></div>
+                    <div class="nameOfTime">Seconds</div>
+                </div>
+            </div>
+            
+            <div id="shareButton" data-clipboard-text="">Share!</div>
+            
+        </div>
+        <div class="footer">Created by Sylwia Suligowska</div>
+    </div>
+</body>
+
+<script type="text/javascript" src="./assets/js/jquery.js"></script>
+<script type="text/javascript" src="./assets/js/moment.js"></script>
+<script type="text/javascript" src="./assets/js/clipboard.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>
+
+</html>
